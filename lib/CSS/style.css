@@ -37,19 +37,19 @@
 
 /* 02. Variáveis */
 :root{
-    --orange: hsl(36, 80%, 50%);
-    --white: hsl(0, 0%, 100%);
-    --WHITE: hsl(0, 0%, 100%);
-    --BLACK: hsl(0, 0%, 0%);
-    --black-90: hsl(0, 0%, 10%);
-    --black-70: hsl(0, 0%, 30%);
-    --black-alpha-40: hsla(0, 0%, 0%, 0.4);
-    --yellow-light: hsl(44, 95%, 83%);
-    --green-light: hsl(158, 68%, 75%);
-    --red-light: hsl(0, 84%, 80%);
-    --orange-light: hsl(22, 85%, 80%);
-    --select-box-bg-color: hsl(0, 0%, 100%);
-    --border-color-1: hsl(0, 0%, 90%);
+    --orange                : hsl(36, 80%, 50%);
+    --white                 : hsl(0, 0%, 100%);
+    --WHITE                 : hsl(0, 0%, 100%);
+    --BLACK                 : hsl(0, 0%, 0%);
+    --black-90              : hsl(0, 0%, 10%);
+    --black-70              : hsl(0, 0%, 30%);
+    --black-alpha-40        : hsla(0, 0%, 0%, 0.4);
+    --yellow-light          : hsl(44, 95%, 83%);
+    --green-light           : hsl(158, 68%, 75%);
+    --red-light             : hsl(0, 84%, 80%);
+    --orange-light          : hsl(22, 85%, 80%);
+    --select-box-bg-color   : hsl(0, 0%, 100%);
+    --border-color-1        : hsl(0, 0%, 90%);
 }
 
 
@@ -58,130 +58,130 @@
 
 /*04. base*/
 body{
-    background-color: var(--body-bg-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--black-70);
-    min-height: 100hv;
-    overflow-x: hidden;
+    background-color        : var(--body-bg-color);
+    font-family             : 'Poppins', sans-serif;
+    font-size               : 16px;
+    font-weight             : 300;
+    color                   : var(--black-70);
+    min-height              : 100hv;
+    overflow-x              : hidden;
 }
 
 a{
-    color: var(--main-color);
-    text-decoration: none;
+    color                   : var(--main-color);
+    text-decoration         : none;
 }
 a:hover{
-    color:var(--main-color);   
+    color                   : var(--main-color);
 }
 img{
-    max-width: 100%;
+    max-width               : 100%;
 }
 ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style              : none;
+    margin                  : 0;
+    padding                 : 0;
 }
 h1,h2,h3,h4,h5,h6{
-    color: var(--black-90);
-    line-height: 1.3;
+    color                   : var(--black-90);
+    line-height             : 1.3;
 }
 h3{
-    font-size: 20px;
+    font-size               : 20px;
 }
 ::selection{
-    color: var(--WHITE);
-    background-color: var(--main-color);
+    color                   : var(--WHITE);
+    background-color        : var(--main-color);
 }
 
 /*05. box*/
 .box{
-    background-color: var(--white);
-    border-radius: 5px;
-    box-shadow: var(--shadow);
-    padding: 30px;
+    background-color        : var(--white);
+    border-radius           : 5px;
+    box-shadow              : var(--shadow);
+    padding                 : 30px;
 }
 
 /* 06. classes customizadas bootstrap */
 .container{
-    --bs-gutter-x: 15px;
-    max-width: 1440px;
+    --bs-gutter-x           : 15px;
+    max-width               : 1440px;
 }
 .row{
-    --bs-gutter-x: 30px;
+    --bs-gutter-x           : 30px;
 }
 
 /* 07. animações Keyframes */
 @keyframes spin{
     0%{
-        transform: rotate(0deg);
+        transform           : rotate(0deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform           : rotate(360deg);
     }
 }
 
 /* 08. sessão - padding, title */
 .section-padding{
-    padding: 60px 0;
+    padding                 : 60px 0;
 
 }
 .section-title{
-    margin-bottom: 40px;
+    margin-bottom           : 40px;
 }
 .section-title .title{
-    font-size: 20px;
-    color: var(--main-color);
-    text-transform: capitalize;
+    font-size               : 20px;
+    color                   : var(--main-color);
+    text-transform          : capitalize;
 }
 .section-title .sub-title{
-    font-size: 35px;
-    font-weight: 600;
-    color: var(--black-90);
+    font-size               : 35px;
+    font-weight             : 600;
+    color                   : var(--black-90);
 }
 /* 09. botões */
 .btn-theme{
-    background-color: var(--main-color);
-    color: var(--WHITE);
-    font-size: 15px;
-    text-transform: capitalize;
-    font-weight: 500;
-    padding: 8px 20px;
-    transition: all 0.3s ease;
+    background-color        : var(--main-color);
+    color                   : var(--WHITE);
+    font-size               : 15px;
+    text-transform          : capitalize;
+    font-weight             : 500;
+    padding                 : 8px 20px;
+    transition              : all 0.3s ease;
 }
 .btn-theme:hover{
-    color: var(--WHITE);
-    background-color: var(--button-hover-color);
+    color                   : var(--WHITE);
+    background-color        : var(--button-hover-color);
 }
 .btn-theme:focus{
-    box-shadow: 0 0 8px var(--main-color);
+    box-shadow              : 0 0 8px var(--main-color);
 }
 /* 10. carregamento da página */
 
 
 /* 11. circular img */
 .circular-img{
-    max-width: 360px;
-    margin: auto;
-    position: relative;
-    z-index: 1;
+    max-width               : 360px;
+    margin                  : auto;
+    position                : relative;
+    z-index                 : 1;
 }
 .circular-img-inner{
-    text-align: center;
-    border-radius: 0 0 180px 180px;
-    overflow: hidden;
+    text-align              : center;
+    border-radius           : 0 0 180px 180px;
+    overflow                : hidden;
 }
 .circular-img-circle{
-    height: 360px;
-    width: 360px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 50%;
+    height                  : 360px;
+    width                   : 360px;
+    position                : absolute;
+    left                    : 0;
+    bottom                  : 0;
+    border-radius           : 50%;
 }
 .circular-img img{
-    position: relative;
-    z-index: 1;
+    position                : relative;
+    z-index                 : 1;
 
 }
 /* 12. forms */
@@ -193,50 +193,50 @@ h3{
 /* 14. paginação */
 page-item.disabled .page-link,
 .page-link{
-    border: none;
-    background-color: transparent;
-    color:var(--black-70);
+    border                  : none;
+    background-color        : transparent;
+    color                   : var(--black-70);
 }
 .page-item.active .page-link{
-    background-color: var(--main-color);
+    background-color        : var(--main-color);
 }
 .page-link:hover{
-    background-color: var(--main-color);
-    color: var(--WHITE);
+    background-color        : var(--main-color);
+    color                   : var(--WHITE);
 }
 
 /* 15. breadcrumb */
 .breadcrumb-nav{
-    padding: 10px 0;
+    padding                 : 10px 0;
 }
 .breadcrumb-nav .breadcrumb-item{
-    font-size: 14px;
-    text-transform: capitalize;
+    font-size               : 14px;
+    text-transform          : capitalize;
 }
 .breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before,
 .breadcrumb-nav .breadcrumb-item.active{
-    color: var(--black-70);
+    color                   : var(--black-70);
 }
 
 
 /* 16. tabs */
 .nav-tabs .nav-link{
-    background-color: var(--white);
-    text-transform: capitalize;
-    border-color: var(--border-color-2);
-    padding: 5px 12px;
-    margin: 0 5px 10px;
-    border-radius: 5px;
-    color: var(--black-70);
-    font-size: 16px;
+    background-color        : var(--white);
+    text-transform          : capitalize;
+    border-color            : var(--border-color-2);
+    padding                 : 5px 12px;
+    margin                  : 0 5px 10px;
+    border-radius           : 5px;
+    color                   : var(--black-70);
+    font-size               : 16px;
 }
 .nav-tabs .nav-link:hover{
-    border-color: var(--border-color-2);
+    border-color            : var(--border-color-2);
 }
 .nav-tabs .nav-link.active{
-    background-color: var(--main-color);
-    border-color: transparent;
-    color: var(--WHITE);
+    background-color        : var(--main-color);
+    border-color            : transparent;
+    color                   : var(--WHITE);
 }
 
 
@@ -248,362 +248,501 @@ page-item.disabled .page-link,
 
 /* 19. header */
 .header{
-    border-bottom: 1px solid var(--border-color-2);
+    border-bottom           : 1px solid var(--border-color-2);
 }
 .header-logo a{
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--black-70);
+    font-size               : 26px;
+    text-transform          : uppercase;
+    font-weight             : 700;
+    color                   : var(--black-70);
 }
 .header-logo span{
-    color: var(--main-color);
+    color                   : var(--main-color);
 }
 .header .menu-item{
-    display: inline-block;
-    margin-left: 40px;
-    position: relative;
+    display                 : inline-block;
+    margin-left             : 40px;
+    position                : relative;
 }
 .header .menu-item > a{
-    display: block;
-    padding: 24px 0;
-    font-weight: 400;
-    color: var(--black-90);
-    text-transform: capitalize;
-    transition: color 0.3s ease;
+    display                 : block;
+    padding                 : 24px 0;
+    font-weight             : 400;
+    color                   : var(--black-90);
+    text-transform          : capitalize;
+    transition              : color 0.3s ease;
 }
 .header .menu-item a:hover,
 .header .menu-item:hover > a{
-    color: var(--main-color);
+    color                   : var(--main-color);
 }
 .header .menu-item > a i{
-    font-size: 13px;
-    margin-left: 3px;
-    pointer-events: none;
+    font-size               : 13px;
+    margin-left             : 3px;
+    pointer-events          : none;
 }
 .header .sub-menu{
-    position: absolute;
-    top: 100%;
-    background-color: var(--white);
-    left: 0;
-    width: 210px;
-    padding: 10px 0;
-    border-radius: 5px;
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-    z-index: 2;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(10px);
+    position                : absolute;
+    top                     : 100%;
+    background-color        : var(--white);
+    left                    : 0;
+    width                   : 210px;
+    padding                 : 10px 0;
+    border-radius           : 5px;
+    box-shadow              : var(--shadow);
+    transition              : all 0.3s ease;
+    z-index                 : 2;
+    visibility              : hidden;
+    opacity                 : 0;
+    transform               : translateY(10px);
 }
 @media (min-width: 992px){
     .header .menu-item:hover > .sub-menu{
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
+        visibility          : visible;
+        opacity             : 1;
+        transform           : translateY(0);
     }
 }
 .header .sub-menu-item a{
-    display: block;
-    padding: 10PX 20PX;
-    color: var(--black-90);
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: color 0.3s ease;
+    display                 : block;
+    padding                 : 10PX 20PX;
+    color                   : var(--black-90);
+    text-transform          : capitalize;
+    font-weight             : 400;
+    transition              : color 0.3s ease;
 }
 .header-backdrop,
 .header-close-btn,
 .header-hamburger-btn{
-    display:none;
+    display                 : none;
 
 }
 
 /* 20. footer */
 .footer-top{
-    padding: 50px 0 20px;
-    border-top: 1px solid var(--border-color-2);
+    padding                 : 50px 0 20px;
+    border-top              : 1px solid var(--border-color-2);
 }
 .footer-item{
-    margin: 0 0 30px;
+    margin                  : 0 0 30px;
 }
 .footer-item h3{
-    text-transform: capitalize;
-    margin: 0 0 20px;
+    text-transform          : capitalize;
+    margin                  : 0 0 20px;
 }
 .footer-item .footer-logo{
-    color: var(--black-70);
-    text-transform: uppercase;
+    color                   : var(--black-70);
+    text-transform          : uppercase;
 }
 .footer-item .footer-logo span{
-    color: var(--main-color);
+    color                   : var(--main-color);
 }
 .footer-item ul li:not(:last-child){
-    margin-bottom: 8px;
+    margin-bottom           : 8px;
 }
 .footer-item ul a{
-    text-transform: capitalize;
-    color: var(--black-70);
-    transition: color 0.3s ease;
-    position: relative;
+    text-transform          : capitalize;
+    color                   : var(--black-70);
+    transition              : color 0.3s ease;
+    position                : relative;
 }
 .footer-item ul a:hover{
-    color: var(--main-color);
+    color                   : var(--main-color);
 }
 .footer-item ul a::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 1px;
-    background-color: var(--main-color);
-    transition: color 0.3s ease;
+    content                 : '';
+    position                : absolute;
+    left                    : 0;
+    bottom                  : 0;
+    width                   : 0%;
+    height                  : 1px;
+    background-color        : var(--main-color);
+    transition              : color 0.3s ease;
 }
 .footer-item ul a:hover::before{
-    width: 100%;
+    width                   : 100%;
 }
 .footer-item ul a .social-icon{
-    margin-right: 5px;
+    margin-right            : 5px;
 } 
 .footer-bottom{
-    border-top: 1px solid var(--border-color-2);
+    border-top              : 1px solid var(--border-color-2);
 }
 .footer-bottom p{
-    font-size: 14px;
+    font-size               : 14px;
 }
 
 /* 21. banner sextion */
 .banner-section{
-    padding: 80px 0;
-    min-height: 680px;
+    padding                 : 80px 0;
+    min-height              : 680px;
 
 }
 .banner-text h2{
-    font-size: 20px;
-    color: var(--main-color);
+    font-size               : 20px;
+    color                   : var(--main-color);
 }
 .banner-text h1{
-    font-size: 45px;
-    font-weight: 700;
+    font-size               : 45px;
+    font-weight             : 700;
 }
 
 .banner-section .circular-img-circle{
-    background-color: var(--red-light);
+    background-color        : var(--red-light);
 }
 
 /* 22. section curiosidades */
 .fun-facts-item{
-    padding: 15px 0;
+    padding                 : 15px 0;
 }
 .fun-facts-item h2{
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
+    font-weight             : 700;
+    font-size               : 30px;
+    text-transform          : uppercase;
 }
 .fun-facts-item p{
-    margin: 0;
-    text-transform: uppercase;
+    margin                  : 0;
+    text-transform          : uppercase;
 }
 .fun-facts-item .style-1{
-    color: var(--black-70);
+    color                   : var(--black-70);
 }
 .fun-facts-item .style-2{
-    color: var(--green-light);
+    color                   : var(--green-light);
 }
 .fun-facts-item .style-3{
-    color: var(--red-light);
+    color                   : var(--red-light);
 }
 .fun-facts-item .style-4{
-    color: var(--orange-light);
+    color                   : var(--orange-light);
 }
 
 /* 23. section cursos */
 .courses-item{
-    margin-bottom: 30px;
-    position: relative;
+    margin-bottom           : 30px;
+    position                : relative;
 
 }
 .courses-item .img-box img{
-    width: 100%;
-    border-radius: 5px;
+    width                   : 100%;
+    border-radius           : 5px;
 }
 .courses-item .link{
-    color: var(--black-70);
-    display: inline-block;
+    color                   : var(--black-70);
+    display                 : inline-block;
 
 }
 .courses-item .title{
-    text-transform: capitalize;
-    margin: 15px 0;
-    transition: color 0.3s ease;
+    text-transform          : capitalize;
+    margin                  : 15px 0;
+    transition              : color 0.3s ease;
 }
 .courses-item:hover .title{
-    color: var(--main-color);
+    color                   : var(--main-color);
 }
 .courses-item .instructor{
-    text-transform: capitalize;
-    margin: 0 0 12px;
+    text-transform          : capitalize;
+    margin                  : 0 0 12px;
 }
 .courses-item .instructor img{
-    width: 30px;
-    border-radius: 50%;
-    margin-right: 5px;
+    width                   : 30px;
+    border-radius           : 50%;
+    margin-right            : 5px;
 }
 .courses-item .rating{
-    font-size: 14px;
+    font-size               : 14px;
 }
 .courses-item .average-rating{
-    font-weight: 600;
-    color: var(--orange);
+    font-weight             : 600;
+    color                   : var(--orange);
 }
 .courses-item .average-stars i{
-    color: var(--orange);
+    color                   : var(--orange);
 }
 .courses-item .price{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    background-color: var(--main-color);
-    color: var(--WHITE);
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 4px;
+    position                : absolute;
+    right                   : 15px;
+    top                     : 15px;
+    background-color        : var(--main-color);
+    color                   : var(--WHITE);
+    font-weight             : 600;
+    padding                 : 4px 8px;
+    border-radius           : 4px;
 
 }
 /* 24. section testemunhos */
 .testimonials-section .img-box{
-    height: 150px;
-    width: 150px;
-    background-color: var(--red-light);
-    margin: 30px auto 50px;
+    height                  : 150px;
+    width                   : 150px;
+    background-color        : var(--red-light);
+    margin                  : 30px auto 50px;
 }
 .testimonials-section .img-box::before,
 .testimonials-section .img-box::after{
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid var(--red-light);
-    animation: spin 15s linear infinite;
+    content                 : '';
+    position                : absolute;
+    border-radius           : 50%;
+    border                  : 1px solid var(--red-light);
+    animation               : spin 15s linear infinite;
 }
 .testimonials-section .img-box::before{
-    height: 180px;
-    width: 180px;
-    left: -15px;
-    top: -15px;
-    border-left: 1px solid transparent;
+    height                  : 180px;
+    width                   : 180px;
+    left                    : -15px;
+    top                     : -15px;
+    border-left             : 1px solid transparent;
 }
 .testimonials-section .img-box::after{
-    height: 210px;
-    width: 210px;
-    left: -30px;
-    top: -30px;
-    border-right: 1px solid transparent;
+    height                  : 210px;
+    width                   : 210px;
+    left                    : -30px;
+    top                     : -30px;
+    border-right            : 1px solid transparent;
 }
 .testimonials-item h3{
-    text-transform: capitalize;
+    text-transform          : capitalize;
 }
 .testimonials-item .text-2{
-    margin: 0;
-    text-transform: capitalize;
+    margin                  : 0;
+    text-transform          : capitalize;
 }
 .testimonials-section .carousel-control-prev,
 .testimonials-section .carousel-control-next{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: var(--main-color);
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 4px;
+    position                : relative;
+    height                  : 35px;
+    width                   : 35px;
+    background-color        : var(--main-color);
+    display                 : inline-block;
+    border-radius           : 50%;
+    margin                  : 0 4px;
 }
 .testimonials-section .decoration-cercles-item{
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.4;
+    position                : absolute;
+    border-radius           : 50%;
+    opacity                 : 0.4;
 }
 .testimonials-section .decoration-cercles-item:nth-child(1){
-    left: 10%;
-    top: 20%;
-    height: 30px;
-    width: 30px;
-    background-color: var(--yellow-light);
+    left                    : 10%;
+    top                     : 20%;
+    height                  : 30px;
+    width                   : 30px;
+    background-color        : var(--yellow-light);
 }
 .testimonials-section .decoration-cercles-item:nth-child(2){
-    left: 40%;
-    top: 40%;
-    height: 50px;
-    width: 50px;
-    background-color: var(--green-light);
+    left                    : 40%;
+    top                     : 40%;
+    height                  : 50px;
+    width                   : 50px;
+    background-color        : var(--green-light);
 }
 .testimonials-section .decoration-cercles-item:nth-child(3){
-    left: 70%;
-    top: 70%;
-    height: 30px;
-    width: 30px;
-    background-color: var(--red-light);
+    left                    : 70%;
+    top                     : 70%;
+    height                  : 30px;
+    width                   : 30px;
+    background-color        : var(--red-light);
 }
 .testimonials-section .decoration-cercles-item:nth-child(4){
-    left: 20%;
-    top: 50%;
-    height: 20px;
-    width: 20px;
-    background-color: var(--red-light);
+    left                    : 20%;
+    top                     : 50%;
+    height                  : 20px;
+    width                   : 20px;
+    background-color        : var(--red-light);
 }
 .testimonials-section .decoration-imgs-item{
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.4;
+    position                : absolute;
+    border-radius           : 50%;
+    opacity                 : 0.4;
 }
 .testimonials-section .decoration-imgs-item:nth-child(1){
-    height: 60px;
-    width: 60px;
-    left: 20%;
-    top: 30%;
-    background-color: var(--yellow-light);
+    height                  : 60px;
+    width                   : 60px;
+    left                    : 20%;
+    top                     : 30%;
+    background-color        : var(--yellow-light);
 }
 .testimonials-section .decoration-imgs-item:nth-child(2){
-    height: 80px;
-    width: 80px;
-    left: 90%;
-    top: 40%;
-    background-color: var(--red-light);
+    height                  : 80px;
+    width                   : 80px;
+    left                    : 90%;
+    top                     : 40%;
+    background-color        : var(--red-light);
 }
 .testimonials-section .decoration-imgs-item:nth-child(3){
-    height: 40px;
-    width: 40px;
-    left: 10%;
-    top: 60%;
-    background-color: var(--green-light);
+    height                  : 40px;
+    width                   : 40px;
+    left                    : 10%;
+    top                     : 60%;
+    background-color        : var(--green-light);
 }
+
 /* 25. section bai */
 .bai-section .circular-img-circle{
-    background-color: var(--yellow-light);
+    background-color        : var(--yellow-light);
 }
 
 /* 26. section detalhes dos cursos */
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*header cursos*/
 .course-header h2{
-    font-size: 30px;
-    margin: 0 0 15px;
-    font-weight: 600;
+    font-size               : 30px;
+    margin                  : 0 0 15px;
+    font-weight             : 600;
 }
 .course-header .average-rating{
-    font-weight: 600;
-    color: var(--orange);
+    font-weight             : 600;
+    color                   : var(--orange);
 }
 .course-header .average-stars i{
-    font-size: 14px;
-    color: var(--orange);
+    font-size               : 14px;
+    color                   : var(--orange);
 }
 .course-header .rating span{
-    vertical-align: middle;
+    vertical-align          : middle;
 }
 .course-header ul li{
-    margin: 6px 0 0;
-    text-transform: capitalize;
+    margin                  : 6px 0 0;
+    text-transform          : capitalize;
 }
 .course-header ul li span{
-    margin-left: 5px;
+    margin-left             : 5px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------ curso tabs -----------------------------------------------------------------------------------*/
+.course-tabs{
+    margin                  : 30px 0 20px;
+}
+.curse-tabs .nav-link{
+    margin                  : 0 10px 10px 0;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------- course curriculo --------------------------------------------------------------------------------*/
+.course-curriculum .accordion-item{
+    border-color            : var(--border-color-1);
+    background-color        : transparent;
+    text-transform          : capitalize;
+}
+.course-curriculum .accordion-button span{
+    position                : absolute;
+    right                   : 17px;
+    font-size               : 14px;
+}
+.course-curriculum .accordion-button::after{
+    content                 : "\f077";
+    font-family             : 'Font Awesome 5 free';
+    font-weight             : 900;
+    background-image        : none;
+    position                : absolute;
+    left                    : 17px;
+    top                     : 50%;
+    transform               : translateY(-50%);
+    height                  : auto;
+    width                   : auto;
+    line-height             : 1;
+
+}
+.course-curriculum .accordion-button{
+    background-color        : transparent;
+    color                   : var(--black-90);
+    font-weight             : 300;
+    flex-wrap               : wrap;
+    padding-left            : 50px;
+    padding-right           : 160px;
+    line-height             : 1.5;
+    text-transform          : capitalize;
+}
+.course-curriculum .accordion-button::focus{
+    box-shadow              : none;
+}
+.course-curriculum .accordion-button:not(.collapsed) span{
+    font-weight             : 500;
+}
+.course-curriculum .accordion-button:not(.collapsed)::after{
+    transform               : translateY(-50%) rotate(-180deg);
+}
+.course-curriculum .accordion-button:not(.collapsed){
+    font-weight             : 600;
+    border-bottom           : 1px solid var(--border-color-1);
+    transition              : none;
+    box-shadow              : none;
+}
+.course-curriculum ul li{
+    position                : relative;
+    padding                 : 0 50px 0 20px;
+}
+.course-curriculum ul li span{
+    position                : absolute;
+    font-size               : 14px;
+    right                   : 0;
+    top                     : 0;
+}
+.course-curriculum ul li i{
+    position                : absolute;
+    left                    : 0;
+    top                     : 6px;
+    color                   : var(--black-70);
+    font-size               : 12px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------- course description ------------------------------------------------------------------------------*/
+.course-description h4{
+    font-size               : 16px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------- course instructor -------------------------------------------------------------------------------*/
+.course-instructor .img-box img{
+    max-width               : 128px;
+    margin-bottom           : 15px;
+}
+.course-instructor h4{
+    font-size               : 16px;
+    text-transform          : capitalize;
+    margin-bottom           : 10px;
+}
+.course-instructor h4 span{
+    font-weight             : 300;
+}
+.course-instructor ul li i{
+    color                   : var(--main-color);
+    margin-right            : 5px;
+}
+.course-instructor ul li:not(:last-child){
+    margin-bottom           : 5px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------- course reviews -------------------------------------------------------------------------------*/
+.rating-summary .average-rating{
+    font-size               : 40px;
+    font-weight             : 700;
+    color                   : var(--black-90);
+} 
+
+.rating-summary .average-stars i{
+    color                   : var(--orange);
+}
+.rating-summary .rating-bars-item{
+    display                 : flex;
+    align-items             : center;
+    margin-bottom           : 8px;
+}
+.rating-summary .progress{
+    height                  : 8px;
+    background-color        : var(--border-color-2);
+    width                   : calc(100% - 120px);
+    margin-right            : 20px;
+    border-radius           : 0;
+}
+.rating-summary .progress-bar{
+    background-color        : var(--main-color);
+}
+.rating-summary .star-text{
+    min-width               : 60px;
+    color                   : var(--orange);
 }
 /* 27. section contatos */
 
