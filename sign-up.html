@@ -1,54 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang                                    = "pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset                             = "UTF-8">
+    <meta http-equiv                          = "X-UA-Compatible" content="IE=edge">
+    <meta name                                = "viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="lib/CSS/font-awesome.css">
-    <link rel="stylesheet" href="lib/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/CSS/style.css">
-    <link rel="stylesheet" class="js-color-style" href="lib/CSS/colors/color-1.css">
+    <link rel                                 = "stylesheet" href="lib/CSS/font-awesome.css">
+    <link rel                                 = "stylesheet" href="lib/CSS/bootstrap.min.css">
+    <link rel                                 = "stylesheet" href="lib/CSS/style.css">
+    <link rel                                 = "stylesheet" class="js-color-style" href="lib/CSS/colors/color-1.css">
+    <link rel                                 = "stylesheet" class="js-glass-style" href="lib/CSS/glass.css">
 </head>
 
 <!-- wrapper start -->
-<div class="main-wrapper">
+<div class                                    = "main-wrapper">
     <!-- header start -->
-    <header class="header">
-        <div class="container">
-            <div class="header-main d-flex justify-content-between align-items-center">
-                <div class="header-logo">
-                    <a href="index.html"><span>JLF</span>Cursos</a>
+    <header class                             = "header">
+        <div class                            = "container">
+            <div class                        = "header-main d-flex justify-content-between align-items-center">
+                <div class                    = "header-logo">
+                    <a href                   = "index.html"><span>JLF</span>Cursos</a>
                 </div>
-                <button type"button" class="header-hamburger-btn js-header-menu-toggler">
+                <button type"button" class    = "header-hamburger-btn js-header-menu-toggler">
                     <span></span>
                 </button>
-                <div class="header-backdrop js-header-backdrop"></div>
-                <nav class="header-menu js-header-menu">
-                    <button type="button" class="header-close-btn ja-header-menu-toggler">
-                        <i class="fas fa-times"></i>
+                <div class                    = "header-backdrop js-header-backdrop"></div>
+                <nav class                    = "header-menu js-header-menu">
+                    <button type              = "button" class="header-close-btn ja-header-menu-toggler">
+                        <i class              = "fas fa-times"></i>
                     </button>
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
+                    <ul class                 = "menu">
+                        <li class             = "menu-item">
+                            <a href           = "index.html">Home</a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#" class="js-toogle-sub-menu">Cursos <i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu js-sub-menu">
-                                <li class="sub-menu-item"><a href="cursos.html">Curso</a></li>
-                                <li class="sub-menu-item"><a href="cursos-detalhes.html">Curso detalhes</a></li>
+                        <li class             = "menu-item menu-item-has-children">
+                            <a href           = "#" class="js-toogle-sub-menu">Cursos <i class="fas fa-chevron-down"></i></a>
+                            <ul class         = "sub-menu js-sub-menu">
+                                <li class     = "sub-menu-item"><a href="cursos.html">Curso</a></li>
+                                <li class     = "sub-menu-item"><a href="cursos-detalhes.html">Curso detalhes</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="#" class="js-toogle-sub-menu">Páginas <i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu js-sub-menu">
-                                <li class="sub-menu-item"><a href="log-in.html">Log In</a></li>
-                                <li class="sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                        <li class             = "menu-item menu-item-has-children">
+                            <a href           = "#" class="js-toogle-sub-menu">Páginas <i class="fas fa-chevron-down"></i></a>
+                            <ul class         = "sub-menu js-sub-menu">
+                                <li class     = "sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                <li class     = "sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
                             </ul>
                         </li>
-                        <li class="menu-item">
-                            <a href="contato.html">Contato</a>
+                        <li class             = "menu-item">
+                            <a href           = "contato.html">Contato</a>
                         </li>
                     </ul>
                 </nav>
@@ -57,64 +58,104 @@
     </header>
     <!-- header end -->
 
+    <!-- breadcrumb start -->
+    <div class                                = "breadcrumb-nav">
+        <div class                            = "container">
+            <nav aria-label                   = "breadcrumb">
+                <ol class                     = "breadcrumb mb-0">
+                    <li class                 = "breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class                 = "breadcrumb-item active" aria-current="page">Sign Up</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- breadcrumb end -->
+
+    <!-- signup section start -->
+    <section class                            = "signup section-padding">
+        <div class                            = "container">
+            <div class                        = "row justify-content-center">
+                <div class                    = "col-md-7 col-lg-6 col-xl-5">
+                    <div class                = "signup-form box">
+                        <h2 class             = "form-title text-center">Crie sua conta</h2>
+                        <form action          = "">
+                            <div class        = "form-group">
+                                <input type   = "text" class="form-control" placeholder="Nome completo">
+                            </div>
+                            <div class        = "form-group">
+                                <input type   = "text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class        = "form-group">
+                                <input type   = "password" class="form-control" placeholder="Senha">
+                            </div>
+                            <button type      = "submit" class="btn btn-theme btn-block">Sign Up</button>
+                            <p class          = "text-center mt-4 mb-0">Já tem uma conta? <a href="log-in.html">Log In</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- signup section end -->
+
     <!-- footer start -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
-                            <h3 class="footer-logo"><span>jlf</span>cursos</h3>
+    <footer class                             = "footer">
+        <div class                            = "footer-top">
+            <div class                        = "container">
+                <div class                    = "row">
+                    <div class                = "col-sm-6 col-lg-3">
+                        <div class            = "footer-item">
+                            <h3 class         = "footer-logo"><span>jlf</span>cursos</h3>
                             <ul>
-                                <li><a href="#">sobre</a></li>
-                                <li><a href="#">o que nós oferecemos</a></li>
-                                <li><a href="#">carreiras</a></li>
-                                <li><a href="#">certificados</a></li>
-                                <li><a href="#">blog</a></li>
+                                <li><a href   = "#">sobre</a></li>
+                                <li><a href   = "#">o que nós oferecemos</a></li>
+                                <li><a href   = "#">carreiras</a></li>
+                                <li><a href   = "#">certificados</a></li>
+                                <li><a href   = "#">blog</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
+                    <div class                = "col-sm-6 col-lg-3">
+                        <div class            = "footer-item">
                             <h3>learning</h3>
                             <ul>
-                                <li><a href="#">baixe o aplicativo</a></li>
-                                <li><a href="#">depoimentos</a></li>
-                                <li><a href="#">valores</a></li>
-                                <li><a href="#">faq</a></li>
+                                <li><a href   = "#">baixe o aplicativo</a></li>
+                                <li><a href   = "#">depoimentos</a></li>
+                                <li><a href   = "#">valores</a></li>
+                                <li><a href   = "#">faq</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
+                    <div class                = "col-sm-6 col-lg-3">
+                        <div class            = "footer-item">
                             <h3>mais</h3>
                             <ul>
-                                <li><a href="#">afiliados</a></li>
-                                <li><a href="#">torne-se um criador de cursos</a></li>
-                                <li><a href="#">treinamentos webnars</a></li>
-                                <li><a href="#">teste de personalidade grátis</a></li>
-                                <li><a href="#">ajuda e suporte</a></li>
+                                <li><a href   = "#">afiliados</a></li>
+                                <li><a href   = "#">torne-se um criador de cursos</a></li>
+                                <li><a href   = "#">treinamentos webnars</a></li>
+                                <li><a href   = "#">teste de personalidade grátis</a></li>
+                                <li><a href   = "#">ajuda e suporte</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
+                    <div class                = "col-sm-6 col-lg-3">
+                        <div class            = "footer-item">
                             <h3>entre em contato</h3>
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook social-icon"></i> facebook</a></li>
-                                <li><a href="#"><i class="fab fa-twitter social-icon"></i> twitter</a></li>
-                                <li><a href="#"><i class="fab fa-instagram social-icon"></i> instagram</a></li>
-                                <li><a href="#"><i class="fab fa-youtube social-icon"></i> youtube</a></li>
-                                <li><a href="#"><i class="fab fa-linkedin social-icon"></i> linkedin</a></li>
+                                <li><a href   = "#"><i class="fab fa-facebook social-icon"></i> facebook</a></li>
+                                <li><a href   = "#"><i class="fab fa-twitter social-icon"></i> twitter</a></li>
+                                <li><a href   = "#"><i class="fab fa-instagram social-icon"></i> instagram</a></li>
+                                <li><a href   = "#"><i class="fab fa-youtube social-icon"></i> youtube</a></li>
+                                <li><a href   = "#"><i class="fab fa-linkedin social-icon"></i> linkedin</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p class="m-0 py-4 text-center">Copyright &copy;2022 FSDias</p>
+        <div class                            = "footer-bottom">
+            <div class                        = "container">
+                <p class                      = "m-0 py-4 text-center">Copyright &copy;2022 FSDias</p>
             </div>
         </div>
     </footer>
@@ -122,9 +163,41 @@
 </div>
 <!-- wrapper end-->
 
+  <!-- style switcher start -->
+  <div class                                  = "style-switcher js-style-switcher">
+    <div class                                = "style-switcher-toggler js-style-switcher-toggler">
+      <i class                                = "fas fa-cog"></i>
+    </div>
+    <h3>Alterar Estilo</h3>
+    <div class                                = "style-switcher-item">
+      <p class                                = "mb-2">Temas de Cores </p>
+      <!-- theme colors -->
+      <div class                              = "theme-colors js-theme-colors">
+        <button type                          = "button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+        <button type                          = "button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+        <button type                          = "button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+        <button type                          = "button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+        <button type                          = "button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+      </div>
+    </div>
+    <div class                                = "style-switcher-item">
+      <div class                              = "form-check form-switch">
+        <input class                          = "form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+        <label class                          = "form-check-label" for="dark-mode">Dark Mode</label>
+      </div>
+    </div>
+    <div class                                = "style-switcher-item">
+      <div class                              = "form-check form-switch">
+        <input class                          = "form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+        <label class                          = "form-check-label" for="glass-effect">Glass Effect</label>
+      </div>
+    </div>
+  </div>
+  <!-- style switcher end -->
+
 <body>
-    <script src="lib/JS/bootstrap.bundle.min.js"></script>
-    <script src="lib/JS/main.js"></script>
+    <script src                               = "lib/JS/bootstrap.bundle.min.js"></script>
+    <script src                               = "lib/JS/main.js"></script>
 </body>
 
 </html>
