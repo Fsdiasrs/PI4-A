@@ -112,7 +112,7 @@ body.t-dark::before{
     html::after{
         right: -60px;
         bottom: 10%;
-    }
+    }/* 52:25 */
 }
 @media(max-width: 991px){
 
