@@ -55,14 +55,14 @@
 
 /* 03. substitui as variáveis ​​para o tema escuro */
 body.t-dark{
-    --body-bg-color: hsl(240, 10%, 19%);
-    --black-70: hsl(0, 0%, 87%);
-    --black-90: hsl(0, 0%, 100%);
-    --shadow: 0 0 10px hsla(0, 0%, 0%,0.08);
-    --white: hsl(240, 8%, 21%);
-    --select-box-bg-color: hsl(240, 8%, 21%);
-    --border-color-2: hsl(240, 9%, 25%);
-    --border-color-1: hsl(240, 9%, 30%);
+    --body-bg-color         : hsl(240, 10%, 19%);
+    --black-70              : hsl(0, 0%, 87%);
+    --black-90              : hsl(0, 0%, 100%);
+    --shadow                : 0 0 10px hsla(0, 0%, 0%,0.08);
+    --white                 : hsl(240, 8%, 21%);
+    --select-box-bg-color   : hsl(240, 8%, 21%);
+    --border-color-2        : hsl(240, 9%, 25%);
+    --border-color-1        : hsl(240, 9%, 30%);
 }
 
 /*04. base*/
@@ -322,10 +322,10 @@ page-item.disabled .page-link,
     z-index                 : 10;
     padding                 : 30px;
     box-shadow              : var(--shadow);
-    transition: right 0.3s ease;
+    transition              : right 0.3s ease;
 }
 .style-switcher.open{
-    right: 0;
+    right                   : 0;
 }
 .style-switcher-toggler{
     height                  : 40px;
@@ -366,15 +366,15 @@ page-item.disabled .page-link,
     font-weight             : 900;
     font-size               : 12px;
     color                   : var(--WHITE);
-    transform: all 0.3s ease;
-    position               : absolute;
+    transform               : all 0.3s ease;
+    position                : absolute;
     left                    : 50%;
     top                     : 50%;
-    transform: translate(-50%, -50%);
-    opacity               : 0;
+    transform               : translate(-50%, -50%);
+    opacity                 : 0;
 }
 .theme-colors button.active::before{
-    opacity: 1;
+    opacity                 : 1;
 }
 .theme-colors .color-1{
     background-color        : hsl(0, 74%, 61%);
@@ -425,6 +425,7 @@ page-item.disabled .page-link,
     font-size               : 13px;
     margin-left             : 3px;
     pointer-events          : none;
+    transition: transform 0.3s ease;
 }
 .header .sub-menu{
     position                : absolute;
@@ -816,6 +817,9 @@ page-item.disabled .page-link,
 .course-curriculum ul li{
     position                : relative;
     padding                 : 0 50px 0 20px;
+}
+.course-curriculum ul li:not(:last-child){
+    margin-bottom: 10px;
 }
 .course-curriculum ul li span{
     position                : absolute;
