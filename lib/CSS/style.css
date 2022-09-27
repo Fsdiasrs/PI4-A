@@ -1,4 +1,4 @@
-/*----------------------------------------------------------------------------------------
+/* /*----------------------------------------------------------------------------------------
 
     *****************************Tabela de Conteúdos**********************************
 
@@ -121,12 +121,44 @@ h3{
 }
 
 /* 07. animações Keyframes */
-@keyframes spin{
+@keyframes spin{ /*animação da espiral*/
     0%{
         transform           : rotate(0deg);
     }
     100%{
         transform           : rotate(360deg);
+    }
+}
+@keyframes bubble{ /*animação das bolhas*/
+    0%{
+      transform             : translateY(0vh);
+      opacity               : 0;
+    }
+    5%,95%{
+        opacity             : 1;
+    }
+    100%{
+        transform           : translateY(-100vh);
+        opacity             : 0;
+    }
+}
+@keyframes loader{
+    0%{
+        transform           : rotate(0deg);
+    }
+    25%,50%{
+        transform           : rotate(180deg);
+    }
+    75%,100%{
+        transform           : rotate(360deg);
+    }
+}
+@keyframes loaderIn{
+    0%, 25%, 100%{
+        height              : 0%;
+    }
+    50%, 75%{
+        height              : 100%;
     }
 }
 
@@ -172,7 +204,38 @@ h3{
     height                  : 48px;
 }
 /* 10. carregamento da página */
-
+.page-loader{
+    position                : fixed;
+    left                    : 0;
+    top                     : 0;
+    height                  : 100%;
+    width                   : 100%;
+    z-index                 : 1001;
+    display                 : flex;
+    background-color        : var(--white);
+}
+.page-loader.fade-out{
+    opacity                 : 0;
+    transition              : all 0.6s ease;
+}
+.page-loader div{
+    margin                  : auto;
+    height                  : 32px;
+    width                   : 32px;
+    border                  : 4px solid var(--main-color);
+    position                : relative;
+    animation               : loader 2s linear infinite;
+}
+.page-loader div::before{
+    content                 : '';
+    position                : absolute;
+    height                  : 100%;
+    width                   : 100%;
+    background-color        : var(--main-color);
+    left                    : 0;
+    top                     : 0;
+    animation               : loaderIn 2s linear infinite;
+}
 
 /* 11. circular img */
 .circular-img{
@@ -309,7 +372,68 @@ page-item.disabled .page-link,
 
 
 /* 17. bubble animation */
-
+.bubble-animation-item{
+    position                : absolute;
+    height                  : 20px;
+    width                   : 20px;
+    border-radius           : 50%;
+    border                  : 2px solid transparent;
+    z-index                 : -1;
+}
+.bubble-animation-item:nth-child(1){
+    border-color            : var(--yellow-light);
+    top                     : 120%;
+    left                    : 10%;
+    animation               : bubble 30s linear infinite;
+}
+.bubble-animation-item:nth-child(2){
+    border-color            : var(--green-light);
+    top                     : 60%;
+    left                    : 50%;
+    animation               : bubble 40s linear infinite;
+}
+.bubble-animation-item:nth-child(3){
+    border-color            : var(--red-light);
+    top                     : 90%;
+    left                    : 90%;
+    animation               : bubble 50s linear infinite;
+}
+.bubble-animation-item:nth-child(4){
+    border-color            : var(--yellow-light);
+    top                     : 80%;
+    left                    : 60%;
+    animation               : bubble 6 0s linear infinite;
+}
+.bubble-animation-item:nth-child(5){
+    border-color            : var(--green-light);
+    top                     : 30%;
+    left                    : 10%;
+    animation               : bubble 70s linear infinite;
+}
+.bubble-animation-item:nth-child(6){
+    border-color            : var(--red-light);
+    top                     : 20%;
+    left                    : 30%;
+    animation               : bubble 80s linear infinite;
+}
+.bubble-animation-item:nth-child(7){
+    border-color            : var(--yellow-light);
+    top                     : 100%;
+    left                    : 5%;
+    animation               : bubble 60s linear infinite;
+}
+.bubble-animation-item:nth-child(8){
+    border-color            : var(--green-light);
+    top                     : 110%;
+    left                    : 33%;
+    animation               : bubble 70s linear infinite;
+}
+.bubble-animation-item:nth-child(9){
+    border-color            : var(--red-light);
+    top                     : 120%;
+    left                    : 65%;
+    animation               : bubble 80s linear infinite;
+}
 
 /* 18. style switcher */
 .style-switcher{
@@ -425,7 +549,7 @@ page-item.disabled .page-link,
     font-size               : 13px;
     margin-left             : 3px;
     pointer-events          : none;
-    transition: transform 0.3s ease;
+    transition              : transform 0.3s ease;
 }
 .header .sub-menu{
     position                : absolute;
@@ -819,7 +943,7 @@ page-item.disabled .page-link,
     padding                 : 0 50px 0 20px;
 }
 .course-curriculum ul li:not(:last-child){
-    margin-bottom: 10px;
+    margin-bottom           : 10px;
 }
 .course-curriculum ul li span{
     position                : absolute;
@@ -1017,4 +1141,4 @@ page-item.disabled .page-link,
     left                    : 0;
     top                     : 0;
     color                   : var(--WHITE);
-}
+} 

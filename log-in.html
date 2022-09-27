@@ -14,187 +14,206 @@
     <link rel                                 = "stylesheet" class="js-glass-style" href="lib/CSS/glass.css" disabled>
 </head>
 
-<!-- wrapper start -->
-<div class                                    = "main-wrapper">
-    <!-- header start -->
-    <header class                             = "header">
-        <div class                            = "container">
-            <div class                        = "header-main d-flex justify-content-between align-items-center">
-                <div class                    = "header-logo">
-                    <a href                   = "index.html"><span>JLF</span>Cursos</a>
-                </div>
-                <button type"button" class    = "header-hamburger-btn js-header-menu-toggler">
-                    <span></span>
-                </button>
-                <div class                    = "header-backdrop js-header-backdrop"></div>
-                <nav class                    = "header-menu js-header-menu">
-                    <button type              = "button" class="header-close-btn js-header-menu-toggler">
-                        <i class              = "fas fa-times"></i>
+<body>
+    <!-- page loader start -->
+    <div class="page-loader js-page-loader">
+        <div></div>
+    </div>
+    <!-- page loader end -->
+
+    <!-- wrapper start -->
+    <div class                                    = "main-wrapper">
+        <!-- header start -->
+        <header class                             = "header">
+            <div class                            = "container">
+                <div class                        = "header-main d-flex justify-content-between align-items-center">
+                    <div class                    = "header-logo">
+                        <a href                   = "index.html"><span>JLF</span>Cursos</a>
+                    </div>
+                    <button type"button" class    = "header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
                     </button>
-                    <ul class                 = "menu">
-                        <li class             = "menu-item">
-                            <a href           = "index.html">Home</a>
-                        </li>
-                        <li class             = "menu-item menu-item-has-children">
-                            <a href           = "#" class="js-toggle-sub-menu">Cursos <i class="fas fa-chevron-down"></i></a>
-                            <ul class         = "sub-menu js-sub-menu">
-                                <li class     = "sub-menu-item"><a href="cursos.html">Curso</a></li>
-                                <li class     = "sub-menu-item"><a href="cursos-detalhes.html">Curso detalhes</a></li>
-                            </ul>
-                        </li>
-                        <li class             = "menu-item menu-item-has-children">
-                            <a href           = "#" class="js-toggle-sub-menu">Páginas <i class="fas fa-chevron-down"></i></a>
-                            <ul class         = "sub-menu js-sub-menu">
-                                <li class     = "sub-menu-item"><a href="log-in.html">Log In</a></li>
-                                <li class     = "sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
-                            </ul>
-                        </li>
-                        <li class             = "menu-item">
-                            <a href           = "contato.html">Contato</a>
-                        </li>
-                    </ul>
+                    <div class                    = "header-backdrop js-header-backdrop"></div>
+                    <nav class                    = "header-menu js-header-menu">
+                        <button type              = "button" class="header-close-btn js-header-menu-toggler">
+                            <i class              = "fas fa-times"></i>
+                        </button>
+                        <ul class                 = "menu">
+                            <li class             = "menu-item">
+                                <a href           = "index.html">Home</a>
+                            </li>
+                            <li class             = "menu-item menu-item-has-children">
+                                <a href           = "#" class="js-toggle-sub-menu">Cursos <i class="fas fa-chevron-down"></i></a>
+                                <ul class         = "sub-menu js-sub-menu">
+                                    <li class     = "sub-menu-item"><a href="cursos.html">Curso</a></li>
+                                    <li class     = "sub-menu-item"><a href="cursos-detalhes.html">Curso detalhes</a></li>
+                                </ul>
+                            </li>
+                            <li class             = "menu-item menu-item-has-children">
+                                <a href           = "#" class="js-toggle-sub-menu">Páginas <i class="fas fa-chevron-down"></i></a>
+                                <ul class         = "sub-menu js-sub-menu">
+                                    <li class     = "sub-menu-item"><a href="log-in.html">Log In</a></li>
+                                    <li class     = "sub-menu-item"><a href="sign-up.html">Sign Up</a></li>
+                                </ul>
+                            </li>
+                            <li class             = "menu-item">
+                                <a href           = "contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+    
+        <!-- breadcrumb start -->
+        <div class                                = "breadcrumb-nav">
+            <div class                            = "container">
+                <nav aria-label                   = "breadcrumb">
+                    <ol class                     = "breadcrumb mb-0">
+                        <li class                 = "breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class                 = "breadcrumb-item active" aria-current="page">Log In</li>
+                    </ol>
                 </nav>
             </div>
         </div>
-    </header>
-    <!-- header end -->
-
-    <!-- breadcrumb start -->
-    <div class                                = "breadcrumb-nav">
-        <div class                            = "container">
-            <nav aria-label                   = "breadcrumb">
-                <ol class                     = "breadcrumb mb-0">
-                    <li class                 = "breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class                 = "breadcrumb-item active" aria-current="page">Log In</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- breadcrumb end -->
-
-    <!-- login section start -->
-    <section class                            = "login-section section-padding">
-        <div class                            = "container">
-            <div class                        = "row justify-content-center ">
-                <div class                    = "col-md-7 col-lg-6 col-xl-5">
-                    <div class                = "login-form box">
-                        <h2 class             = "form-title text-center">Faça login na sua conta</h2>
-                        <form action          = "">
-                            <div class        = "form-group">
-                                <input type   = "text" class="form-control" placeholder="Email">
-                            </div>
-                            <div class        = "form-group">
-                                <input type   = "password" class="form-control" placeholder="Senha">
-                                <div class    = "d-flex mb-2 justify-content-end"><a href="#">Esqueceu a senha</a></div>
-                            </div>
-                            <button type      = "submit" class="btn btn-theme btn-block btn-form">Log In</button>
-                            <p class          = "text-center mt-4 mb-0">Não tem uma conta? <a href="sign-up.html">Sign Up</a></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- login section end -->
-
-    <!-- footer start -->
-    <footer class                             = "footer">
-        <div class                            = "footer-top">
-            <div class                        = "container">
-                <div class                    = "row">
-                    <div class                = "col-sm-6 col-lg-3">
-                        <div class            = "footer-item">
-                            <h3 class         = "footer-logo"><span>jlf</span>cursos</h3>
-                            <ul>
-                                <li><a href   = "#">sobre</a></li>
-                                <li><a href   = "#">o que nós oferecemos</a></li>
-                                <li><a href   = "#">carreiras</a></li>
-                                <li><a href   = "#">certificados</a></li>
-                                <li><a href   = "#">blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class                = "col-sm-6 col-lg-3">
-                        <div class            = "footer-item">
-                            <h3>learning</h3>
-                            <ul>
-                                <li><a href   = "#">baixe o aplicativo</a></li>
-                                <li><a href   = "#">depoimentos</a></li>
-                                <li><a href   = "#">valores</a></li>
-                                <li><a href   = "#">faq</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class                = "col-sm-6 col-lg-3">
-                        <div class            = "footer-item">
-                            <h3>mais</h3>
-                            <ul>
-                                <li><a href   = "#">afiliados</a></li>
-                                <li><a href   = "#">torne-se um criador de cursos</a></li>
-                                <li><a href   = "#">treinamentos webnars</a></li>
-                                <li><a href   = "#">teste de personalidade grátis</a></li>
-                                <li><a href   = "#">ajuda e suporte</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class                = "col-sm-6 col-lg-3">
-                        <div class            = "footer-item">
-                            <h3>entre em contato</h3>
-                            <ul>
-                                <li><a href   = "#"><i class="fab fa-facebook social-icon"></i> facebook</a></li>
-                                <li><a href   = "#"><i class="fab fa-twitter social-icon"></i> twitter</a></li>
-                                <li><a href   = "#"><i class="fab fa-instagram social-icon"></i> instagram</a></li>
-                                <li><a href   = "#"><i class="fab fa-youtube social-icon"></i> youtube</a></li>
-                                <li><a href   = "#"><i class="fab fa-linkedin social-icon"></i> linkedin</a></li>
-                            </ul>
+        <!-- breadcrumb end -->
+    
+        <!-- login section start -->
+        <section class                            = "login-section section-padding">
+        <!-- bubble animation start -->
+        <div class="bubble-animation">
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+            <div class="bubble-animation-item"></div>
+          </div>
+        <!-- bubble animation end -->
+            <div class                            = "container">
+                <div class                        = "row justify-content-center ">
+                    <div class                    = "col-md-7 col-lg-6 col-xl-5">
+                        <div class                = "login-form box">
+                            <h2 class             = "form-title text-center">Faça login na sua conta</h2>
+                            <form action          = "">
+                                <div class        = "form-group">
+                                    <input type   = "text" class="form-control" placeholder="Email">
+                                </div>
+                                <div class        = "form-group">
+                                    <input type   = "password" class="form-control" placeholder="Senha">
+                                    <div class    = "d-flex mb-2 justify-content-end"><a href="#">Esqueceu a senha</a></div>
+                                </div>
+                                <button type      = "submit" class="btn btn-theme btn-block btn-form">Log In</button>
+                                <p class          = "text-center mt-4 mb-0">Não tem uma conta? <a href="sign-up.html">Sign Up</a></p>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class                            = "footer-bottom">
-            <div class                        = "container">
-                <p class                      = "m-0 py-4 text-center">Copyright &copy;2022 FSDias</p>
+        </section>
+        <!-- login section end -->
+    
+        <!-- footer start -->
+        <footer class                             = "footer">
+            <div class                            = "footer-top">
+                <div class                        = "container">
+                    <div class                    = "row">
+                        <div class                = "col-sm-6 col-lg-3">
+                            <div class            = "footer-item">
+                                <h3 class         = "footer-logo"><span>jlf</span>cursos</h3>
+                                <ul>
+                                    <li><a href   = "#">sobre</a></li>
+                                    <li><a href   = "#">o que nós oferecemos</a></li>
+                                    <li><a href   = "#">carreiras</a></li>
+                                    <li><a href   = "#">certificados</a></li>
+                                    <li><a href   = "#">blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class                = "col-sm-6 col-lg-3">
+                            <div class            = "footer-item">
+                                <h3>learning</h3>
+                                <ul>
+                                    <li><a href   = "#">baixe o aplicativo</a></li>
+                                    <li><a href   = "#">depoimentos</a></li>
+                                    <li><a href   = "#">valores</a></li>
+                                    <li><a href   = "#">faq</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class                = "col-sm-6 col-lg-3">
+                            <div class            = "footer-item">
+                                <h3>mais</h3>
+                                <ul>
+                                    <li><a href   = "#">afiliados</a></li>
+                                    <li><a href   = "#">torne-se um criador de cursos</a></li>
+                                    <li><a href   = "#">treinamentos webnars</a></li>
+                                    <li><a href   = "#">teste de personalidade grátis</a></li>
+                                    <li><a href   = "#">ajuda e suporte</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class                = "col-sm-6 col-lg-3">
+                            <div class            = "footer-item">
+                                <h3>entre em contato</h3>
+                                <ul>
+                                    <li><a href   = "#"><i class="fab fa-facebook social-icon"></i> facebook</a></li>
+                                    <li><a href   = "#"><i class="fab fa-twitter social-icon"></i> twitter</a></li>
+                                    <li><a href   = "#"><i class="fab fa-instagram social-icon"></i> instagram</a></li>
+                                    <li><a href   = "#"><i class="fab fa-youtube social-icon"></i> youtube</a></li>
+                                    <li><a href   = "#"><i class="fab fa-linkedin social-icon"></i> linkedin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class                            = "footer-bottom">
+                <div class                        = "container">
+                    <p class                      = "m-0 py-4 text-center">Copyright &copy;2022 FSDias</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- wrapper end-->
+    
+      <!-- style switcher start -->
+      <div class                                  = "style-switcher js-style-switcher">
+        <div class                                = "style-switcher-toggler js-style-switcher-toggler">
+          <i class                                = "fas fa-cog"></i>
         </div>
-    </footer>
-    <!-- footer end -->
-</div>
-<!-- wrapper end-->
+        <h3>Alterar Estilo</h3>
+        <div class                                = "style-switcher-item">
+          <p class                                = "mb-2">Temas de Cores </p>
+          <!-- theme colors -->
+          <div class                              = "theme-colors js-theme-colors">
+            <button type                          = "button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
+            <button type                          = "button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
+            <button type                          = "button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
+            <button type                          = "button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
+            <button type                          = "button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
+          </div>
+        </div>
+        <div class                                = "style-switcher-item">
+          <div class                              = "form-check form-switch">
+            <input class                          = "form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+            <label class                          = "form-check-label" for="dark-mode">Dark Mode</label>
+          </div>
+        </div>
+        <div class                                = "style-switcher-item">
+          <div class                              = "form-check form-switch">
+            <input class                          = "form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+            <label class                          = "form-check-label" for="glass-effect">Glass Effect</label>
+          </div>
+        </div>
+      </div>
+      <!-- style switcher end -->
 
-  <!-- style switcher start -->
-  <div class                                  = "style-switcher js-style-switcher">
-    <div class                                = "style-switcher-toggler js-style-switcher-toggler">
-      <i class                                = "fas fa-cog"></i>
-    </div>
-    <h3>Alterar Estilo</h3>
-    <div class                                = "style-switcher-item">
-      <p class                                = "mb-2">Temas de Cores </p>
-      <!-- theme colors -->
-      <div class                              = "theme-colors js-theme-colors">
-        <button type                          = "button" data-js-theme-color="color-1" class="js-theme-color-item color-1"></button>
-        <button type                          = "button" data-js-theme-color="color-2" class="js-theme-color-item color-2"></button>
-        <button type                          = "button" data-js-theme-color="color-3" class="js-theme-color-item color-3"></button>
-        <button type                          = "button" data-js-theme-color="color-4" class="js-theme-color-item color-4"></button>
-        <button type                          = "button" data-js-theme-color="color-5" class="js-theme-color-item color-5"></button>
-      </div>
-    </div>
-    <div class                                = "style-switcher-item">
-      <div class                              = "form-check form-switch">
-        <input class                          = "form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
-        <label class                          = "form-check-label" for="dark-mode">Dark Mode</label>
-      </div>
-    </div>
-    <div class                                = "style-switcher-item">
-      <div class                              = "form-check form-switch">
-        <input class                          = "form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
-        <label class                          = "form-check-label" for="glass-effect">Glass Effect</label>
-      </div>
-    </div>
-  </div>
-  <!-- style switcher end -->
-
-<body>
     <script src                               = "lib/JS/bootstrap.bundle.min.js"></script>
     <script src                               = "lib/JS/main.js"></script>
 </body>

@@ -66,6 +66,7 @@ body::before{
 .box{
    border                   : 1px solid var(--border-color-2);
 }
+
 .header-backdrop,
 .modal,
 .header .sub-menu,
@@ -105,7 +106,7 @@ body.t-dark::before{
     body{
         padding: 40px 30px;
     }
-    html::before{
+     html::before{
         left: -35px;
         top: 10%;
     }
@@ -115,9 +116,26 @@ body.t-dark::before{
     }/* 52:25 */
 }
 @media(max-width: 991px){
-
+    .header-menu{
+        -webkit-backdrop-filter: var(--backdrop-filter-blur);
+        backdrop-filter: var(--backdrop-filter-blur);
+    }
+    .header .sub-menu{
+        border: 0;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
 }
 @media(max-width: 767px){
+    body{
+        padding: 35px 15px;
+    }
+    html::before{
+        left: -50px;
+    }
+    html::after{
+        right: -75px;
+    }
 
 }
 @media(max-width: 575px){
